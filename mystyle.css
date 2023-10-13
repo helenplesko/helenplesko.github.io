@@ -1,0 +1,192 @@
+<link rel="stylesheet" href="./mystyle.css">
+
+<style>
+body {
+  background-color: #fff7fb;
+  font-family: "century gothic";
+}
+
+/* Start of sidebar, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+.sidenav {
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #ece2f0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #014636;
+	display: block;
+	font-family: "century gothic";
+	font-weight: bold;
+}
+
+.sidenav a:hover {
+	color: #fff7fb;
+}
+/* End of sidebar, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.main {
+	margin-left: 190px;
+	padding: 0px 10px;
+	font-family: "century gothic";
+}
+
+/* ResponsiveOption Begin */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ResponsiveOption End */
+
+.footer {
+	width: 100%;
+	position: static;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #ece2f0;
+	overflow-x: hidden;
+	padding-left: 20px;
+	font-family: "century gothic";
+	font-size: 10px;
+}
+
+h1 {
+	color: #014636;
+	font-size: 60px;
+	text-align: center;
+}
+
+/* Start of h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
+h2 {
+	border-radius: 12px;
+	border: 2px solid #4B6F44;
+	background: #FFF;
+	padding: 0.4em;
+	width: auto;
+	font-weight: bold;
+	height: 50px;
+	color: #4B6F44;
+	text-align: left
+}
+/* End of h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
+
+h3 {
+	color: #2E5894;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h4 {
+	color: #000;
+	text-align: left;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+p {
+	text-align: left;
+	font-family: "century gothic";
+	color: #000;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+/* Start of table, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+#futureparks {
+	font-family: "century gothic";
+	border-collapse: collapse;
+	width: 75%;
+}
+
+#futureparks td, th {
+	border: 1px solid #fff;
+	padding: 8px;
+	border-radius: 15px;
+}
+
+#futureparks tr:nth-child(even){
+	background-color: #f7fcf5;
+}
+
+#futureparks th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #016c59;
+	color: white;
+}
+/* End of table, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+
+/*Responsive Two Column Layout for Resume Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnresume {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowresume:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ResponsiveOption Begin */
+@media screen and (max-width: 1000px) {
+  .columnresume {
+    width: 100%;
+  }
+}
+/* ResponsiveOption End */
+
+/*Responsive Two Column Layout for Projects Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnprojects {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowprojects:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* ResponsiveOption Begin */
+@media screen and (max-width: 2000px) {
+  .columnprojects {
+    width: 100%;
+  }
+}
+/* ResponsiveOption End */
+
+</style>
