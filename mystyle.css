@@ -1,12 +1,9 @@
-<link rel="stylesheet" href="./mystyle.css">
-
-<style>
 body {
   background-color: #fff7fb;
   font-family: "century gothic";
 }
 
-/* Start of sidebar, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+/* MenuOption Begin, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidenav {
 	height: 100%;
 	width: 180px;
@@ -32,7 +29,7 @@ body {
 .sidenav a:hover {
 	color: #fff7fb;
 }
-/* End of sidebar, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+/* MenuOption End, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 
 .main {
 	margin-left: 190px;
@@ -47,18 +44,6 @@ body {
 }
 /* ResponsiveOption End */
 
-.footer {
-	width: 100%;
-	position: static;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #ece2f0;
-	overflow-x: hidden;
-	padding-left: 20px;
-	font-family: "century gothic";
-	font-size: 10px;
-}
 
 h1 {
 	color: #014636;
@@ -102,23 +87,23 @@ p {
 	font-size: 16px;
 }
 
-/* Start of table, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+/* TableOption Begin, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
 #futureparks {
 	font-family: "century gothic";
 	border-collapse: collapse;
-	width: 75%;
+	width: 65%;
 }
-
 #futureparks td, th {
 	border: 1px solid #fff;
 	padding: 8px;
 	border-radius: 15px;
 }
-
 #futureparks tr:nth-child(even){
+	background-color: #e5f5df;
+}
+#futureparks tr:nth-child(odd){
 	background-color: #f7fcf5;
 }
-
 #futureparks th {
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -126,9 +111,9 @@ p {
 	background-color: #016c59;
 	color: white;
 }
-/* End of table, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+/* TableOption End, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
 
-/*Responsive Two Column Layout for Resume Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+/* Responsive Two Column Layout for Resume Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 * {
   box-sizing: border-box;
 }
@@ -155,7 +140,7 @@ p {
 }
 /* ResponsiveOption End */
 
-/*Responsive Two Column Layout for Projects Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+/* Responsive Two Column Layout for Projects Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 * {
   box-sizing: border-box;
 }
@@ -181,11 +166,70 @@ p {
 }
 
 /* ResponsiveOption Begin */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
   .columnprojects {
     width: 100%;
   }
 }
 /* ResponsiveOption End */
 
-</style>
+
+/* Responsive Two Column Layout for Home Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnhome {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.rowhome:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ResponsiveOption Begin */
+@media screen and (max-width: 1500px) {
+  .columnhome {
+    width: 100%;
+  }
+}
+/* ResponsiveOption End */
+
+
+/* TableOption Begin, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+#flemingcourses {
+	font-family: "century gothic";
+	border-collapse: collapse;
+	width: auto;
+}
+#flemingcourses td, th {
+	border: 1px solid #fff;
+	padding: 8px;
+	border-radius: 15px;
+	text-align: center;
+}
+#flemingcourses tr:nth-child(odd){
+	background-color: #f0f5fc;
+}
+#flemingcourses tr:nth-child(even){
+	background-color: #e1ecfc;
+}
+#flemingcourses td:nth-child(even){
+	text-align: left;
+}
+#flemingcourses th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #2E5894;
+	color: white;
+}
+#flemingcourses th:nth-child(even){
+	text-align: left;
+}
+/* TableOption End, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
