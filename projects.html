@@ -3,6 +3,7 @@
 <head>
 	<title>Helen Plesko</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- External link to stylesheet -->
 	<link rel="stylesheet" href="./mystyle.css">
 </head>
 <body>
@@ -10,232 +11,249 @@
 <!--MenuOption Begin, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
 <!-- Sidebar linking to my webpages and external LinkedIn page. -->
 <div class="leftmenu">
-	<img src="HPleskoSelf.jpg" alt="Headshot of Helen Plesko" width="160" height="166" class="center">
+	<img src="HPleskoSelf.jpg" alt="Headshot of Helen Plesko" width="160" height="166" class="centerimage">
 	<a href="./index.html">About</a>
 	<a href="./projects.html">Projects</a>
 	<a href="https://www.linkedin.com/in/helenplesko/" target="_blank">LinkedIn</a>
 </div>
 <!--MenuOption End, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
 
+<!-- Site banner -->
 <div class="sitebanner">
 	<h1>HELEN PLESKO</h1>
 	<p>The projects shown below were deliverables for the GIS Applications Specialist program at Fleming College in Lindsay, ON.</p>
 </div>
 
-<div class="main">
-	<h2>PROJECTS</h2>
-	<div class="projects">
-		<div class="rowprojects">
-			<div class="columnprojects">
-				<h3>TDSB SCHOOL DISTRIBUTION BY WARD</h3>
-				<img src="HPleskoTDSBSchoolDist.png" alt="TDSB School Distribution by Ward by Helen Plesko" width="620" height="387" class="center">
-					
-					<h4>Summary of Project:</h4>
-						<p>This cartographic output fulfilled assignment requirements in Geovisualization I. 
-						The purpose of this general reference map is to show the distribution of elementary and secondary schools within each ward across the Toronto District School Board (TDSB).
-						The text gives background knowledge of the boundaries, student resources, and current (2021) and projected (2026) student head count.
-						</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Utilized various generalization techniques to clean up the road network, waterways, and vegetation.
-							<li>Created a visually appealing general reference map in a large format for paper, keeping visual hierarchy in mind.</li>
-						</ul>
-			</div>
-			<div class="columnprojects">
-				<h3>PICNIC SITE SUITABILITY ANALYSIS</h3>
-					<img src="HPleskoPicnicSuitability.png" alt="Picnic Site Suitability by Helen Plesko" width="620" height="399" class="center">
-					
-					<h4>Summary of Project:</h4>
-						<p>This cartographic output fulfilled assignment requirements in Environmental Modelling.
-						For this project, a simple terrain analysis was conducted to find the most suitable areas for a picnic in the Peterborough Area of Ontario.
-						The criteria considered in the analysis were slope, aspect, proximity to infrastructure, and proximity to natural phenomena including parks and vegetation.
-						3D visualization was added to the cartographic output to provide an additional perspective to one of the most suitable areas for a picnic.
-						</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Compared various spatial interpolation methods and created a contour DEM using one that fit best</li>
-							<li>Conducted a simple terrain analysis in ArcGIS Pro using the DEM and various ArcGIS Tools</li>
-							<li>Created a 3D visualization of an area on the map using ArcGIS Pro's Local Scene</li>
-							<li>Created a cartographic output, keeping visual hierarchy in mind</li>
-						</ul>
-			</div>
+<!-- Projects displayed in two equal columns, with images and descriptions of each. -->
+<h2>PROJECTS</h2>
+<div class="projects">
+	
+	<!-- Row 1, displaying two projects. -->
+	<div class="rowprojects">
+		<div class="columnprojects">
+			<!--Project 1, in row 1, column 1-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>TDSB SCHOOL DISTRIBUTION BY WARD</h3>
+			<img src="HPleskoTDSBSchoolDist.png" alt="TDSB School Distribution by Ward by Helen Plesko" width="620" height="387" class="centerimage">
+				
+				<h4>Summary of Project:</h4>
+					<p>This cartographic output fulfilled assignment requirements in Geovisualization I. 
+					The purpose of this general reference map is to show the distribution of elementary and secondary schools within each ward across the Toronto District School Board (TDSB).
+					The text gives background knowledge of the boundaries, student resources, and current (2021) and projected (2026) student head count.
+					</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Utilized various generalization techniques to clean up the road network, waterways, and vegetation.
+						<li>Created a visually appealing general reference map in a large format for paper, keeping visual hierarchy in mind.</li>
+					</ul>
 		</div>
-		
-		<div class="rowprojects">
-			<div class="columnprojects">			
-				<h3>PRIMARY CARE ENROLMENT IN TORONTO</h3>
-					<img src="HPleskoPrimCareEnr.png" alt="Toronto Primary Care Enrolment by Helen Plesko" width="620" height="477" class="center">
-					
-					<h4>Summary of Project:</h4>
-						<p>This cartographic output fulfilled assignment requirements in Spatial Analysis II.
-						Statistical analysis of Primary Care Enrolment in Toronto, Ontario, was conducted.
-						The variables involved in the analysis were: employed population, university graduates with a certificate or diploma, median household income after tax, and primary care enrolment values.
-						</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Gathered reliable open sourced data for conducting the analysis.</li>
-							<li>Used Ordinary Least Squares and Geographically Weighted Regression tools to conduct and evaluate the analysis.</li>
-							<li>Produced a cartographic output, keeping visual hierarchy in mind</li>
-						</ul>
-			</div>
-			<div class="columnprojects">	
-				<h3>TORONTO HEALTH SERVICES TO THE TTC DASHBOARD</h3>
-					<img src="HPleskoDashboard.png" alt="TO Health Services and the TTC Dashboard by Helen Plesko" width="620" height="293" class="center">
-					
-					<h4>Summary of Project:</h4>
-						<p>This interactive dashboard fulfilled assignment requirements in Spatial Analysis II.
-						This interactive dashboard displays geocoded and linear referenced layers showing the locations of Substance Use Treatment Centres and Ambulance Stations within Toronto, ON, and their proximity to the city's TTC route.
-						The purpose of the dashboard is to highlight these health services that are within 1km of the TTC route, in hope to spread awareness of their locations and accessibility.
-						</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Utilized Geocoding and Linear Referencing tools and techniques in ArcGIS Pro to produce neighbourhood, points of interest, and route layers.</li>
-							<li>Produced an interactive dashboard on ArcGIS Online, where when zoomed into, the map surrounds change and provides details of the boundaries zoomed to.</li>
-						</ul>
-			</div>
-		</div>
-		
-		<div class="rowprojects">
-			<div class="columnprojects">
-				<h3>HEALTH SERVICES DRIVING TIME NOTEBOOK</h3>
-				<img src="HPleskoSubUseLocAmb.png" alt="TO Substance Use Treatment and Ambulance Stations Notebook by Helen Plesko" width="477" height="620" class="center">
-
-					<h4>Summary of Project:</h4>
-						<p>This ArcGIS Pro Notebook fulfilled assignment requirements in Spatial Analysis II.
-						This ArcGIS Pro Notebook of the City of Toronto shows the proximity of Substance Use Treatment Locations to Ambulance Stations within the city by vehicle.
-						Closest Facility Network Analysis tools were used to find ambulance stations within 4 minute drive time to the substance use treatment centres.
-						</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Utilized ArcGIS Pro's Closest Facility Network Analysis tools</li>
-							<li>Produced a 196 page Notebook in ArcGIS Pro</li>
-						</ul>
-			</div>
-			<div class="columnprojects">
-				<h3>SNAPPING TURTLE HABITAT STORY MAP</h3>
-				<img src="HPleskoSnappingTurtleSuitability.png" alt="Snapping Turtle Habitat Site Suitability Analysis by Helen Plesko" width="620" height="382" class="center">
-					<h4>Summary of Project:</h4>
-						<p>This AGOL story map fulfilled assignment requirements in Spatial Analysis II.
-						To potentially help monitor and protect the snapping turtle species, an analytic hierarchy process (AHP) multi-criteria decision analysis (MCDA) was performed to determine areas most suitable for their habitat.
-						The study area was Central region of Ontario, approximately 22,679 square kilometers in size. 
-						The 5 criteria considered in this analysis were Aspect, Land Cover, Distance from Waterbody, Distance from Road, and Distance from Fishing Access Points.</p>
-					<h4>Skills Demonstrated:</h4>
-						<ul>
-							<li>Used an online analytic hierarchy process (AHP) where classmates participated in ranking the criteria to assist in multi-criteria decision analysis (MCDA) prior to making the necessary layers for analysis.</li>
-							<li>Created the layers necessary for site suitability analysis in ArcGIS Pro using various tools, including Raster Calculator</li>
-							<li>Created a visually appealing and interactive Story Map on AGOL</li>
-						</ul>
-			</div>
+		<div class="columnprojects">
+			<!--Project 2, in row 1, column 2-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>PICNIC SITE SUITABILITY ANALYSIS</h3>
+				<img src="HPleskoPicnicSuitability.png" alt="Picnic Site Suitability by Helen Plesko" width="620" height="399" class="centerimage">
+				
+				<h4>Summary of Project:</h4>
+					<p>This cartographic output fulfilled assignment requirements in Environmental Modelling.
+					For this project, a simple terrain analysis was conducted to find the most suitable areas for a picnic in the Peterborough Area of Ontario.
+					The criteria considered in the analysis were slope, aspect, proximity to infrastructure, and proximity to natural phenomena including parks and vegetation.
+					3D visualization was added to the cartographic output to provide an additional perspective to one of the most suitable areas for a picnic.
+					</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Compared various spatial interpolation methods and created a contour DEM using one that fit best</li>
+						<li>Conducted a simple terrain analysis in ArcGIS Pro using the DEM and various ArcGIS Tools</li>
+						<li>Created a 3D visualization of an area on the map using ArcGIS Pro's Local Scene</li>
+						<li>Created a cartographic output, keeping visual hierarchy in mind</li>
+					</ul>
 		</div>
 	</div>
 	
-	<h2>COURSES</h2>
-		<p>The courses I've taken at Fleming College has significantly broadened my knowledge and interest in all things related to GIS.
-		They have taught me valuable skills that will help me excel in my future career. 
-		Below are the courses I am taking and will take throughout the GIS Applications Specialist Program.</p>
-		
-		<!--TableOption Begin-->
-		<!-- Table of the courses I'm taking/have taken/will be taking at Fleming College. -->
-		<table id="flemingcourses">
-			<tr>
-				<th>Course Code</th>
-				<th>Course Name</th>
-				<th>Semester</th>
-			</tr>
-			<tr>
-				<td>GEOM 65</td>
-				<td>GIS Database Principles</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>GEOM 102</td>
-				<td>Geovisualization I</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>GEOM 67</td>
-				<td>Problem Solving and Progamming</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>GEOM 103</td>
-				<td>Spatial Analysis I</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>GEOM 105</td>
-				<td>Environmental Modeling</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>GEOM 70</td>
-				<td>GIS Database Development</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>GEOM 109</td>
-				<td>Spatial Analysis II</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>GEOM 73</td>
-				<td>Customizations of GIS Applications</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>GEOM 111</td>
-				<td>GIS Data Management</td>
-				<td>3</td>
-			</tr>
-			<tr>
-				<td>GEOM 104</td>
-				<td>Geodesy</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>GEOM 66</td>
-				<td>Remote Sensing and Image Analysis</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>SURV 21</td>
-				<td>Surveying and CAD Mapping</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>GEOM 101</td>
-				<td>Web Design and Programming</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>APST 87</td>
-				<td>Survey Camp</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>GEOM 75</td>
-				<td>Advanced Remote Sensing</td>
-				<td>5</td>
-			</tr>
-			<tr>
-				<td>GEOM 68</td>
-				<td>GIS Collaborative Project Planning</td>
-				<td>5</td>
-			</tr>
-			<tr>
-				<td>GEOM 99</td>
-				<td>Web GIS Development</td>
-				<td>5</td>
-			</tr>
-			<tr>
-				<td>APST 62</td>
-				<td>GIS Collaborative Project</td>
-				<td>6</td>
-			</tr>
-		</table>
-		<!--TableOption End-->
+	<!-- Row 2, displaying two projects. -->
+	<div class="rowprojects">
+		<div class="columnprojects">	
+			<!--Project 3, in row 2, column 1-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>PRIMARY CARE ENROLMENT IN TORONTO</h3>
+				<img src="HPleskoPrimCareEnr.png" alt="Toronto Primary Care Enrolment by Helen Plesko" width="620" height="477" class="centerimage">
+				
+				<h4>Summary of Project:</h4>
+					<p>This cartographic output fulfilled assignment requirements in Spatial Analysis II.
+					Statistical analysis of Primary Care Enrolment in Toronto, Ontario, was conducted.
+					The variables involved in the analysis were: employed population, university graduates with a certificate or diploma, median household income after tax, and primary care enrolment values.
+					</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Gathered reliable open sourced data for conducting the analysis.</li>
+						<li>Used Ordinary Least Squares and Geographically Weighted Regression tools to conduct and evaluate the analysis.</li>
+						<li>Produced a cartographic output, keeping visual hierarchy in mind</li>
+					</ul>
+		</div>
+		<div class="columnprojects">	
+			<!--Project 4, in row 2, column 2-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>TORONTO HEALTH SERVICES TO THE TTC DASHBOARD</h3>
+				<img src="HPleskoDashboard.png" alt="TO Health Services and the TTC Dashboard by Helen Plesko" width="620" height="293" class="centerimage">
+				
+				<h4>Summary of Project:</h4>
+					<p>This interactive dashboard fulfilled assignment requirements in Spatial Analysis II.
+					This interactive dashboard displays geocoded and linear referenced layers showing the locations of Substance Use Treatment Centres and Ambulance Stations within Toronto, ON, and their proximity to the city's TTC route.
+					The purpose of the dashboard is to highlight these health services that are within 1km of the TTC route, in hope to spread awareness of their locations and accessibility.
+					</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Utilized Geocoding and Linear Referencing tools and techniques in ArcGIS Pro to produce neighbourhood, points of interest, and route layers.</li>
+						<li>Produced an interactive dashboard on ArcGIS Online, where when zoomed into, the map surrounds change and provides details of the boundaries zoomed to.</li>
+					</ul>
+		</div>
+	</div>
 	
+	<!-- Row 3, displaying two projects. -->
+	<div class="rowprojects">
+		<div class="columnprojects">
+			<!--Project 5, in row 3, column 1-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>HEALTH SERVICES DRIVING TIME NOTEBOOK</h3>
+			<img src="HPleskoSubUseLocAmb.png" alt="TO Substance Use Treatment and Ambulance Stations Notebook by Helen Plesko" width="477" height="620" class="centerimage">
+
+				<h4>Summary of Project:</h4>
+					<p>This ArcGIS Pro Notebook fulfilled assignment requirements in Spatial Analysis II.
+					This ArcGIS Pro Notebook of the City of Toronto shows the proximity of Substance Use Treatment Locations to Ambulance Stations within the city by vehicle.
+					Closest Facility Network Analysis tools were used to find ambulance stations within 4 minute drive time to the substance use treatment centres.
+					</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Utilized ArcGIS Pro's Closest Facility Network Analysis tools</li>
+						<li>Produced a 196 page Notebook in ArcGIS Pro</li>
+					</ul>
+		</div>
+		<div class="columnprojects">
+			<!--Project 6, in row 3, column 2-->
+			<!--Image of project, summary of project, and unordered list with skills demonstrated-->
+			<h3>SNAPPING TURTLE HABITAT STORY MAP</h3>
+			<img src="HPleskoSnappingTurtleSuitability.png" alt="Snapping Turtle Habitat Site Suitability Analysis by Helen Plesko" width="620" height="382" class="centerimage">
+				<h4>Summary of Project:</h4>
+					<p>This AGOL story map fulfilled assignment requirements in Spatial Analysis II.
+					To potentially help monitor and protect the snapping turtle species, an analytic hierarchy process (AHP) multi-criteria decision analysis (MCDA) was performed to determine areas most suitable for their habitat.
+					The study area was Central region of Ontario, approximately 22,679 square kilometers in size. 
+					The 5 criteria considered in this analysis were Aspect, Land Cover, Distance from Waterbody, Distance from Road, and Distance from Fishing Access Points.</p>
+				<h4>Skills Demonstrated:</h4>
+					<ul>
+						<li>Used an online analytic hierarchy process (AHP) where classmates participated in ranking the criteria to assist in multi-criteria decision analysis (MCDA) prior to making the necessary layers for analysis.</li>
+						<li>Created the layers necessary for site suitability analysis in ArcGIS Pro using various tools, including Raster Calculator</li>
+						<li>Created a visually appealing and interactive Story Map on AGOL</li>
+					</ul>
+		</div>
+	</div>
 </div>
+
+<!-- Fleming program courses displayed in a table. -->
+<h2>COURSES</h2>
+	<p>The courses I've taken at Fleming College has significantly broadened my knowledge and interest in all things related to GIS.
+	They have taught me valuable skills that will help me excel in my future career. 
+	Below are the courses I am taking and will take throughout the GIS Applications Specialist Program.</p>
+	
+	<!--TableOption Begin-->
+	<!-- Table of the courses I'm taking/have taken/will be taking at Fleming College. -->
+	<table id="flemingcourses">
+		<tr> <!--Column Headings-->
+			<th>COURSE CODE</th>
+			<th>COURSE NAME</th>
+			<th>SEMESTER</th>
+		</tr>
+		<tr> <!--Course 1-->
+			<td>GEOM 65</td>
+			<td>GIS Database Principles</td>
+			<td>1</td>
+		</tr>
+		<tr> <!--Course 2-->
+			<td>GEOM 102</td>
+			<td>Geovisualization I</td>
+			<td>1</td>
+		</tr>
+		<tr> <!--Course 3-->
+			<td>GEOM 67</td>
+			<td>Problem Solving and Progamming</td>
+			<td>1</td>
+		</tr>
+		<tr> <!--Course 4-->
+			<td>GEOM 103</td>
+			<td>Spatial Analysis I</td>
+			<td>1</td>
+		</tr>
+		<tr> <!--Course 5-->
+			<td>GEOM 105</td>
+			<td>Environmental Modeling</td>
+			<td>2</td>
+		</tr>
+		<tr> <!--Course 6-->
+			<td>GEOM 70</td>
+			<td>GIS Database Development</td>
+			<td>2</td>
+		</tr>
+		<tr> <!--Course 7-->
+			<td>GEOM 109</td>
+			<td>Spatial Analysis II</td>
+			<td>2</td>
+		</tr>
+		<tr> <!--Course 8-->
+			<td>GEOM 73</td>
+			<td>Customizations of GIS Applications</td>
+			<td>2</td>
+		</tr>
+		<tr> <!--Course 9-->
+			<td>GEOM 111</td>
+			<td>GIS Data Management</td>
+			<td>3</td>
+		</tr>
+		<tr> <!--Course 10-->
+			<td>GEOM 104</td>
+			<td>Geodesy</td>
+			<td>4</td>
+		</tr>
+		<tr> <!--Course 11-->
+			<td>GEOM 66</td>
+			<td>Remote Sensing and Image Analysis</td>
+			<td>4</td>
+		</tr>
+		<tr> <!--Course 12-->
+			<td>SURV 21</td>
+			<td>Surveying and CAD Mapping</td>
+			<td>4</td>
+		</tr>
+		<tr> <!--Course 13-->
+			<td>GEOM 101</td>
+			<td>Web Design and Programming</td>
+			<td>4</td>
+		</tr>
+		<tr> <!--Course 14-->
+			<td>APST 87</td>
+			<td>Survey Camp</td>
+			<td>4</td>
+		</tr>
+		<tr> <!--Course 15-->
+			<td>GEOM 75</td>
+			<td>Advanced Remote Sensing</td>
+			<td>5</td>
+		</tr>
+		<tr> <!--Course 16-->
+			<td>GEOM 68</td>
+			<td>GIS Collaborative Project Planning</td>
+			<td>5</td>
+		</tr>
+		<tr> <!--Course 17-->
+			<td>GEOM 99</td>
+			<td>Web GIS Development</td>
+			<td>5</td>
+		</tr>
+		<tr> <!--Course 18-->
+			<td>APST 62</td>
+			<td>GIS Collaborative Project</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<!--TableOption End-->
+
 
 </body>
 </html>
