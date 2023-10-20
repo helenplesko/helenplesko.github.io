@@ -1,4 +1,4 @@
-/* Body of html page background and font */
+/* Background, font family, and margin of body of document */
 body {
 	background-color: #fff7fb;
 	font-family: "century gothic", verdana, arial, sans-serif;
@@ -16,7 +16,7 @@ body {
 	left: 0;
 	padding-top: 10px;
 }
-/* Customization of the font in the side navigation bar */
+/* Customization of the text in the side navigation bar */
 .leftmenu a {
 	color: #014636;
 	font-weight: bold;
@@ -26,7 +26,7 @@ body {
 	text-decoration: none;
 	display: block;
 }
-/* Change colour, weight, size, and underline of font when mouse hovers over the sidebar links */
+/* Customization of the side navigation bar text when mouse hovers over them */
 .leftmenu a:hover {
 	color: #08519c;
 	font-weight: lighter;
@@ -35,7 +35,7 @@ body {
 	text-decoration-style: wavy;
 }
 /* ResponsiveOption Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive */
-/* When the screen size is too small, my photo and the sidebar links move to the top of the page. */
+/* When the screen size is too small, my photo and the side navigation bar links move to the top of the page. */
 @media screen and (max-width: 800px) {
 	.leftmenu {
 		width: 100%;
