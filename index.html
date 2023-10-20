@@ -3,135 +3,145 @@
 <head>
 	<title>Helen Plesko</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- External link to stylesheet -->
 	<link rel="stylesheet" href="./mystyle.css">
 </head>
 <body>
 
-<!--MenuOption Begin, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
-<!-- Sidebar linking to my webpages and external LinkedIn page. -->
+<!-- MenuOption Begin, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
+<!-- Sidebar with a picture of myself and links to my webpages and external LinkedIn page. -->
 <div class="leftmenu">
-	<img src="HPleskoSelf.jpg" alt="Headshot of Helen Plesko" width="160" height="166" class="center">
+	<img src="HPleskoSelf.jpg" alt="Headshot of Helen Plesko" width="160" height="166" class="centerimage">
 	<a href="./index.html">About</a>
 	<a href="./projects.html">Projects</a>
 	<a href="https://www.linkedin.com/in/helenplesko/" target="_blank">LinkedIn</a>
 </div>
-<!--MenuOption End, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
+<!-- MenuOption End, inspired by: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
 
+<!-- Site banner text -->
 <div class="sitebanner">
 	<h1>HELEN PLESKO</h1>
 	<p>Born and raised in Toronto, Ontario, Canada. Seeking a new career involving GIS. Willing to relocate.</p>
 </div>
 
-<div class="main">
-	
-	<h2>EDUCATION</h2>
-	<div class="roweducation">
-		<div class="columneducation">
-			<h3>Fleming College, Lindsay ON</h3>
-				<p>Ontario College Graduate Certificate, Geographic Information Systems Applications Specialist, 2024</p>
-			<h3>Queen's University, Kingston ON</h3>
-				<p>Bachelor of Education, Primary/Junior Division, 2018</p>
-			<h3>Trent University, Peterborough ON</h3>
-				<p>Bachelor of Science (Honours), Physical Geography Major with several courses in Mathematics, 2017</p>
-		</div>
-		<div class="columneducation">
-			<!--GMapsOption Begin-->
-			<!-- Google API Static Map showing the locations of the post secondary schools I've attended. -->
-			<img src="https://maps.googleapis.com/maps/api/staticmap?size=550x300&center=44.3251220%2C-77.5893000&maptype=roadmap&zoom=8&markers=size%3Amid%7Ccolor%3A0x387846%7Clabel%3AT%7CTrent+University+Peterborough+ON&markers=size%3Amid%7Ccolor%3Ared%7Clabel%3AF%7CFleming+College+Lindsay+ON&markers=size%3Amid%7Ccolor%3A0x3974BF%7Clabel%3AQ%7CQueens+University+Kingston+ON&key=AIzaSyD1Tk0KkDWUvFEaVfc79DU9C4dk5x-CjwI" alt="Education Location" width="550" height="300">
-			<!--GMapsOption End-->
-		</div>
+<!-- Education displayed with headings, what I studied, and a map showing where the institutions are on a static map. -->
+<!-- Info is displayed in two columns so that they can be shown side by side. -->
+<h2>EDUCATION</h2>
+<div class="roweducation">
+	<div class="columneducation">
+		<h3>Fleming College, Lindsay ON</h3>
+			<p>Ontario College Graduate Certificate, Geographic Information Systems Applications Specialist, 2024</p>
+		<h3>Queen's University, Kingston ON</h3>
+			<p>Bachelor of Education, Primary/Junior Division, 2018</p>
+		<h3>Trent University, Peterborough ON</h3>
+			<p>Bachelor of Science (Honours), Physical Geography Major with several courses in Mathematics, 2017</p>
 	</div>
-		
-	<h2>EXPERIENCE</h2>
-		<h3>Toronto District School Board, Toronto ON</h3>
-		<p>Helping youth reach their full potential by creating and leading differentiated and engaging lesson plans based on the Ontario Curriculum.
-		<h4>Roles:</h4>
-			<ul>
-				<li>Occasional Teacher, On-call, 2018-Present</li>
-				<li>Core French Teacher, Long-term Occasional, 2022</li>
-				<li>Grade 5/6 Teacher, Long-term Occasional, 2022</li>
-				<li>JK/SK Virtual School Teacher, Long-term Occasional, 2020-2021</li>
-				<li>Grade 6 and 7 English Teacher, Long-term Occasional, 2019-2020</li>
-			</ul>
-		<h3>High Park Nature Centre, Toronto ON</h3>
-		<p>Shared my love for and knowledge of the flora, fauna, and trails of Toronto's largest public park with visitors of all ages.</p>
-		<h4>Roles:</h4>
-			<ul>
-				<li>Nature Interpreter, 2018-2020</li>
-				<li>Environmental Education Summer Camp Counsellor, 2018-2020</li>
-				<li>Cherry Blossom Ambassador, 2018</li>
-			</ul>
-		<h3>YMCA Cedar Glen Outdoor Centre, Schomberg ON</h3>
-		<p>Strengthened the relationships of participants and helped them discover their potential through outdoor educational activities, including high and low ropes, fire and shelter building, and map and compass orienteering.</p>
-		<h4>Role:</h4>
-			<ul>
-				<li>Outdoor Educator, 2018-2019</li>
-			</ul>
+	<div class="columneducation">
+		<!-- GMapsOption Begin -->
+		<!-- Google API Static Map showing the locations of the post secondary schools I've attended. -->
+		<img src="https://maps.googleapis.com/maps/api/staticmap?size=550x300&center=44.3251220%2C-77.5893000&maptype=roadmap&zoom=8&markers=size%3Amid%7Ccolor%3A0x387846%7Clabel%3AT%7CTrent+University+Peterborough+ON&markers=size%3Amid%7Ccolor%3Ared%7Clabel%3AF%7CFleming+College+Lindsay+ON&markers=size%3Amid%7Ccolor%3A0x3974BF%7Clabel%3AQ%7CQueens+University+Kingston+ON&key=AIzaSyD1Tk0KkDWUvFEaVfc79DU9C4dk5x-CjwI" alt="Education Location" width="550" height="300">
+		<!-- GMapsOption End -->
+	</div>
+</div>
 
-	<h2>SKILLS AND CERTIFICATIONS</h2>
-	<div class="rowskills">
-		<div class="columnskills">
-			<h3>Skills</h3>
-				<ul>
-					<li>ESRI Products (ArcGIS Pro, AGOL, Story Maps, Survey123)</li>
-					<li>Writing Python Programming Language</li>
-					<li>Writing SQL Queries</li>
-					<li>Developing HTML and CSS documents</li>
-					<li>Google Suite (Docs, Sheets, Slides, Quiz, Jamboard, Gmail)</li>
-					<li>Microsoft Suite (Word, Excel, PowerPoint, Access, Outlook)</li>
-				</ul>
-		</div>
-		<div class="columnskills">
-			<h3>GIS-Related Certifications</h3>
-				<ul>
-					<li>HTML Essential Training (2017), LinkedIn, 2023</li>
-					<li>ArcGIS Notebooks Basics, Esri, 2023</li>
-					<li>Preparing for Network Analysis, Esri, 2023</li>
-					<li>Spatial Interpolation with ArcGIS Pro, Esri, 2023</li>
-					<li>Building Geoprocessing Models Using ArcGIS Pro, Esri, 2022</li>
-					<li>Getting Started with the Geodatabase, Esri, 2022</li>
-					<li>Introducing Illustrator, LinkedIn, 2022</li>
-				</ul>
-		</div>
-		<div class="columnskills">
-			<h3>Teaching-Related Certifications</h3>
-				<ul>
-					<li>Ontario College of Teachers, 2018-Present</li>
-					<li>Mathematics, Primary and Junior (Part 1) AQ, Trent University, 2021</li>
-					<li>Reading (Part 1) AQ, Trent University, 2021</li>
-					<li>Teaching English Language Learners AQ, Trent University, 2019</li>
-					<li>Intermediate Division (Mathematics) ABQ, Trent University, 2018</li>
-					<li>Special Education (Part 1) AQ, Trent University, 2018</li>
-				</ul>
-		</div>
+<!-- Experiences displayed with headings, what I did there, and roles in unordered lists. -->
+<h2>EXPERIENCE</h2>
+	<!-- Work Experience 1, with role listed as an unordered list -->
+	<h3>Toronto District School Board, Toronto ON</h3>
+	<p>Helping youth reach their full potential by creating and leading differentiated and engaging lesson plans based on the Ontario Curriculum.
+	<h4>Roles:</h4>
+		<ul>
+			<li>Occasional Teacher, On-call, 2018-Present</li>
+			<li>Core French Teacher, Long-term Occasional, 2022</li>
+			<li>Grade 5/6 Teacher, Long-term Occasional, 2022</li>
+			<li>JK/SK Virtual School Teacher, Long-term Occasional, 2020-2021</li>
+			<li>Grade 6 and 7 English Teacher, Long-term Occasional, 2019-2020</li>
+		</ul>
+	<!-- Work Experience 2, with role listed as an unordered list -->
+	<h3>High Park Nature Centre, Toronto ON</h3>
+	<p>Shared my love for and knowledge of the flora, fauna, and trails of Toronto's largest public park with visitors of all ages.</p>
+	<h4>Roles:</h4>
+		<ul>
+			<li>Nature Interpreter, 2018-2020</li>
+			<li>Environmental Education Summer Camp Counsellor, 2018-2020</li>
+			<li>Cherry Blossom Ambassador, 2018</li>
+		</ul>
+	<!-- Work Experience 3, with role listed as an unordered list -->
+	<h3>YMCA Cedar Glen Outdoor Centre, Schomberg ON</h3>
+	<p>Strengthened the relationships of participants and helped them discover their potential through outdoor educational activities, including high and low ropes, fire and shelter building, and map and compass orienteering.</p>
+	<h4>Role:</h4>
+		<ul>
+			<li>Outdoor Educator, 2018-2019</li>
+		</ul>
+
+<!-- Skills and certifications displayed in three equal columns, becomes stacked when page is too small -->
+<h2>SKILLS AND CERTIFICATIONS</h2>
+<div class="rowskills">
+	<div class="columnskills">
+		<h3>Skills and Software</h3> 
+			<ul> <!--Unordered list of my skills and software familiarity-->
+				<li>ESRI Products (ArcGIS Pro, AGOL, Story Maps, Survey123)</li>
+				<li>Writing Python and SQL</li>
+				<li>Developing simple HTML and CSS documents</li>
+				<li>Adobe Illustrator</li>
+				<li>AutoCAD Map 3D 2024</li>
+				<li>Google Suite (Docs, Sheets, Slides, Quiz, Jamboard, Gmail)</li>
+				<li>Microsoft Suite (Word, Excel, PowerPoint, Access, Outlook)</li>
+			</ul>
 	</div>
-	
-	<h2>OTHER ACCOMPLISHMENTS</h2>
-		<h3>Honours Thesis, Trent University, 2017</h3>
-			<ul>
-				<li>Analysis of particle flight characteristics across wet and frozen surfaces</li>
-				<li>Wind tunnel simulations took place at the Trent University Environmental Wind Tunnel in Peterborough, ON</li>
-				<li>Acquired data through extensive use of the Laser Doppler Anemometer</li>
+	<div class="columnskills">
+		<h3>GIS-Related Certifications</h3>
+			<ul> <!--Unordered list of my GIS-related certifications-->
+				<li>HTML Essential Training (2017), LinkedIn, 2023</li>
+				<li>ArcGIS Notebooks Basics, Esri, 2023</li>
+				<li>Preparing for Network Analysis, Esri, 2023</li>
+				<li>Spatial Interpolation with ArcGIS Pro, Esri, 2023</li>
+				<li>Building Geoprocessing Models Using ArcGIS Pro, Esri, 2022</li>
+				<li>Getting Started with the Geodatabase, Esri, 2022</li>
+				<li>Introducing Illustrator, LinkedIn, 2022</li>
 			</ul>
-	
-	<h2>HOBBIES AND INTERESTS</h2>
-		
-		<h3>In my free-time, I like to...</h3>
-			<ul>
-				<li>Read, thriller is my favourite genre</li>
-				<li>Bake, cookies are my favourite dessert</li>
-				<li>Cycle, along Toronto's waterfronts</li>
-				<li>Hike and Camp, at Ontario Provincial Parks</li>
+	</div>
+	<div class="columnskills">
+		<h3>Teaching-Related Certifications</h3>
+			<ul> <!--Unordered list of my teaching-related certifications-->
+				<li>Ontario College of Teachers, 2018-Present</li>
+				<li>Mathematics, Primary and Junior (Part 1) AQ, Trent University, 2021</li>
+				<li>Reading (Part 1) AQ, Trent University, 2021</li>
+				<li>Teaching English Language Learners AQ, Trent University, 2019</li>
+				<li>Intermediate Division (Mathematics) ABQ, Trent University, 2018</li>
+				<li>Special Education (Part 1) AQ, Trent University, 2018</li>
 			</ul>
-		
-		<h4>Ontario Provincial Parks I've been to so far...</h4>
+	</div>
+</div>
+
+<!-- Other accomplishments displayed with headings and unordered list describing accomplishment. -->
+<h2>OTHER ACCOMPLISHMENTS</h2>
+	<h3>Honours Thesis, Trent University, 2017</h3>
+		<ul>
+			<li>Analysis of particle flight characteristics across wet and frozen surfaces</li>
+			<li>Wind tunnel simulations took place at the Trent University Environmental Wind Tunnel in Peterborough, ON</li>
+			<li>Acquired data through extensive use of the Laser Doppler Anemometer</li>
+		</ul>
+
+<!-- Hobbies and interests displayed with headings, unordered lists, static image map, and table. -->
+<h2>HOBBIES AND INTERESTS</h2>
+	
+	<h3>In my free-time, I like to...</h3>
+		<ul> <!-- Unordered list of things I enjoy doing in my free-time -->
+			<li>Read, thriller is my favourite genre</li>
+			<li>Bake, cookies are my favourite dessert</li>
+			<li>Cycle, along Toronto's waterfronts</li>
+			<li>Hike and Camp, at Ontario Provincial Parks</li>
+		</ul>
+	
+	<h4>Ontario Provincial Parks I've been to so far...</h4>
 		<p>My love for the outdoors started at the young age of four, when my parents took me on a week-long camping trip at Killbear Provincial Park. Now, an adult, a goal that I have is to visit all of the Ontario Provincial Parks. I've visited 19 out of 330 so far - I've got a long ways to go!</p>
 		<p>Click on the red location pins to open up the park's page.</p>
-		
-		<!--GMapsOption Begin-->
+	
+		<!-- GMapsOption Begin -->
 		<!-- Google API Static Map showing the Ontario Provincial Parks I have visited. -->
 		<img src="https://maps.googleapis.com/maps/api/staticmap?center=Balsam+Lake+Ontario&size=500x500&zoom=7&maptype=terrain&markers=size%3Atiny%7C45.3915%2C-79.2140&markers=size%3Atiny%7C44.62555%2C-78.85738&markers=size%3Atiny%7C44.89720%2C-77.20950&markers=size%3Atiny%7C43.40684%2C-79.76889&markers=size%3Atiny%7C43.8755%2C-78.777834&markers=size%3Atiny%7C44.150159%2C-79.898905&markers=size%3Atiny%7C44.340451%2C-78.534350&markers=size%3Atiny%7C43.81636964%2C-80.01141257&markers=size%3Atiny%7C45.91768%2C-80.55927&markers=size%3Atiny%7C45.00240053%2C-79.51835187&markers=size%3Atiny%7C45.35886%2C-80.21344&markers=size%3Atiny%7C44.296983%2C-78.270292&markers=size%3Atiny%7C44.0477951%2C-80.07415366&markers=size%3Atiny%7C43.953448%2C-77.522129&markers=size%3Atiny%7C45.567143502%2C-78.438456087&markers=size%3Atiny%7C44.0101%2C-77.7416&markers=size%3Atiny%7C44.3217%2C-79.3250&markers=size%3Atiny%7C44.88824%2C-79.75216&markers=size%3Atiny%7C44.498500%2C-80.047283&key=AIzaSyD1Tk0KkDWUvFEaVfc79DU9C4dk5x-CjwI" alt="Provincial Parks Visited" width="500" height="500" usemap="#parkmap">
-		<!--GMapsOption End-->
+		<!-- GMapsOption End -->
 
 		<!-- Image Map Begin, inspired by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2 -->
 		<!-- Clicking on the pins on the static map will bring you to the parks page. -->
@@ -157,62 +167,62 @@
 				<area shape="circle" coords="140,250,5" alt="Wasaga Beach Provincial Park" href="https://www.ontarioparks.com/park/wasagabeach" target="_blank">
 			</map>
 		<!-- Image Map End, inspired by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2 -->
-				
-		<h4>Where I'm headed next...</h4>
-		
-		<!--TableOption Begin-->
-		<!-- Table of the Ontario Provincial Parks I hope to visit in the near future. -->
+			
+	<h4>Where I'm headed next...</h4>
+	
+		<!-- TableOption Begin -->
+		<!-- Table of the Ontario Provincial Parks I hope to visit in the near future, their latitudes, longitudes, when I would visit, and activities to do there. -->
 		<table id="futureparks">
-			<tr>
-				<th>Provincial Park</th>
-				<th>Latitude</th>
-				<th>Longitude</th>
-				<th>Season</th>
-				<th>Activities</th>
+			<tr> <!--Column Headings-->
+				<th>PROVINCIAL PARK</th>
+				<th>LATITUDE</th>
+				<th>LONGITUDE</th>
+				<th>SEASON</th>
+				<th>ACTIVITIES</th>
 			</tr>
-			<tr>
+			<tr> <!--Park 1-->
 				<td>Awenda</td>
 				<td>44.843699</td>
 				<td>-80.002699</td>
 				<td>Winter</td>
 				<td>Day-trip, Snowshoeing</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 2-->
 				<td>Killarney</td>
 				<td>46.012567</td>
 				<td>-81.401889</td>
 				<td>Summer or Fall</td>
 				<td>Camping, Swimming, Canoeing, Hiking</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 3-->
 				<td>Lake on the Mountain</td>
 				<td>44.039956</td>
 				<td>-77.056496</td>
 				<td>Summer</td>
 				<td>Day-trip, Hiking, Picnic</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 4-->
 				<td>MacGregor Point</td>
 				<td>44.408899</td>
 				<td>-81.446512</td>
 				<td>Summer</td>
 				<td>Camping, Cycling</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 5-->
 				<td>Pinery</td>
 				<td>43.24841</td>
 				<td>-81.82342</td>
 				<td>Summer or Winter</td>
 				<td>Camping, Canoeing, Hiking, Cross-country Skiing</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 6-->
 				<td>Sandbanks</td>
 				<td>43.91122</td>
 				<td>-77.24169</td>
 				<td>Summer</td>
 				<td>Camping, Swimming</td>
 			</tr>
-			<tr>
+			<tr> <!--Park 7-->
 				<td>Sleeping Giant</td>
 				<td>48.506370</td>
 				<td>-88.728676</td>
@@ -222,11 +232,11 @@
 		</table>
 		<!--TableOption End-->
 		
-		<p>Click on the purple location pins below to find out what's next on my Provincial Park Bucketlist! </p>
-		<!--GMapsOption Begin-->
+		<p>Click on the purple location pins below to learn more about the parks on my Provincial Park Bucketlist! </p>
+		<!-- GMapsOption Begin -->
 		<!-- Google API Static Map showing the Ontario Provincial Parks I hope to visit in the near future. -->
 		<img src="https://maps.googleapis.com/maps/api/staticmap?center=46.18932867357%2C-82.7938472446&size=620x500&zoom=6&maptype=terrain&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C44.843699%2C-80.002699&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C46.012567%2C-81.401889&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C44.039956%2C-77.056496&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C44.408899%2C-81.446512&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C43.24841%2C-81.82342&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C43.91122%2C-77.24169&markers=size%3Atiny%7Ccolor%3A0xca38ff%7C48.506370%2C-88.728676&key=AIzaSyD1Tk0KkDWUvFEaVfc79DU9C4dk5x-CjwI" alt="Provincial Parks to Visit" width="620" height="500" usemap="#futureparkmap">
-		<!--GMapsOption End-->
+		<!-- GMapsOption End -->
 
 		<!-- Image Map Begin, inspired by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2 -->
 		<!-- Clicking on the pins on the static map will bring you to the parks page. -->
@@ -240,9 +250,19 @@
 				<area shape="circle" coords="39,86,5" alt="Sleeping Giant Provincial Park" href="https://www.ontarioparks.com/park/sleepinggiant" target="_blank">
 			</map>
 		<!-- Image Map End, inspired by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2 -->
-
-
-</div>
-
+		
+	<h4>Some photos from my provincial park adventures...</h4>
+		<!-- ImageOption Begin -->
+		<!-- Images I have taken at various provincial parks -->
+		<img src="HPleskoMonoCliffs.jpeg" alt="Mono Cliffs PP" width="300" height="400">
+		<img src="HPleskoArrowhead.jpeg" alt="Arrowhead PP" width="400" height="300">
+		<img src="HPleskoGrundy.jpeg" alt="Grundy PP" width="300" height="400">
+		<img src="HPleskoForksOfTheCredit.jpeg" alt="Forks of the Credit PP" width="400" height="300">
+		<img src="HPleskoSixMile.jpeg" alt="Six Mile PP" width="300" height="400">
+		<img src="HPleskoBonEcho.jpeg" alt="Bon Echo PP" width="400" height="300">
+		<img src="HPleskoAlgonquin.jpeg" alt="Algonquin PP" width="300" height="400">
+		<img src="HPleskoSibbald.jpg" alt="Sibbald PP" width="400" height="300">
+		<!-- ImageOption End -->
+	
 </body>
 </html>
