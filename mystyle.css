@@ -2,93 +2,98 @@
 body {
 	background-color: #fff7fb;
 	font-family: "century gothic", verdana, arial, sans-serif;
+	margin-left: 190px;
 }
 
 /* MenuOption Begin, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 /* Customization of side navigation bar */
 .leftmenu {
+	background-color: #ece2f0;
 	height: 100%;
 	width: 180px;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #ece2f0;
-	overflow-x: hidden;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 /* Customization of the font in the side navigation bar */
 .leftmenu a {
+	color: #014636;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "century gothic", verdana, arial, sans-serif;
 	padding: 10px 6px 4px 16px;
 	text-decoration: none;
-	font-size: 25px;
-	color: #014636;
 	display: block;
-	font-family: "century gothic", verdana, arial, sans-serif;
-	font-weight: bold;
 }
-/* Color of font when mouse hovers over the sidebar links */
+/* Change colour, weight, size, and underline of font when mouse hovers over the sidebar links */
 .leftmenu a:hover {
-	color: #fff7fb;
+	color: #08519c;
+	font-weight: lighter;
+	font-size: 30px;
+	text-decoration: underline;
+	text-decoration-style: wavy;
 }
-/* ResponsiveOption Begin */
-@media screen and (max-height: 450px) {
-	.leftmenu {padding-top: 15px;}
-	.leftmenu a {font-size: 18px;}
+/* ResponsiveOption Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive */
+/* When the screen size is too small, my photo and the sidebar links move to the top of the page. */
+@media screen and (max-width: 800px) {
+	.leftmenu {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.leftmenu a {
+		float: left;
+	}
+	body {
+		margin-left: 0px; /* margin is removed from the body */
+	}
 }
-/* ResponsiveOption End */
+/* ResponsiveOption End, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive */
 /* MenuOption End, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 
 /* Customization of site banner */
 .sitebanner {
-	padding-left: 180px;
-	padding-top: 12px;
-	padding-bottom: 12px;
 	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 12px;
 	background: #ebd8ea;
-	color: white;	
 }
 /* Customization of site banner paragraph text */
-/* h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 .sitebanner p {
-	text-align: center;
 	color: #000;
+	text-align: center;
 	font-weight: bold;
 	font-size: 16px;
 	font-family: "century gothic", verdana, arial, sans-serif;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
-/* Customization of main content section */
-.main {
-	margin-left: 190px;
-	padding: 0px 10px;
-	font-family: "century gothic", verdana, arial, sans-serif;
-}
-
 /* Customization of Header 1 */
 h1 {
 	color: #014636;
-	font-size: 60px;
 	text-align: center;
+	font-weight: bold;
+	font-size: 60px;
 	font-family: "century gothic", verdana, arial, sans-serif;
+	margin-block-start: 15px;
+	margin-block-end: 15px;
 }
 
 /* Customization of Header 2 */
 /* h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 h2 {
+	color: #4B6F44;
+	text-align: left;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "century gothic", verdana, arial, sans-serif;
 	border-radius: 15px;
-	border: 1px solid #4B6F44;
+	border: 2px dashed #4B6F44;
 	background: #FFF;
 	padding: 9px;
 	width: auto;
-	font-weight: bold;
 	height: 50px;
-	color: #4B6F44;
-	text-align: left;
-	font-size: 25px;
-	font-family: "century gothic", verdana, arial, sans-serif;
 }
 /* End of h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 
@@ -99,22 +104,28 @@ h3 {
 	font-weight: bold;
 	font-size: 20px;
 	font-family: "century gothic", verdana, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* Customization of projects Header 3 text*/
+/* .projects h3, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 .projects h3 {
+	color: #2E5894;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "century gothic", verdana, arial, sans-serif;
 	border-radius: 15px;
 	border: 1px solid #2E5894;
 	background: #f0f5fc;
 	padding: 7px;
 	width: auto;
-	font-weight: bold;
 	height: 40px;
-	color: #2E5894;
-	text-align: center;
-	font-size: 20px;
-	font-family: "century gothic", verdana, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+/* End of .projects h3, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 
 /* Customization of Header 4 */
 h4 {
@@ -123,28 +134,46 @@ h4 {
 	font-weight: bold;
 	font-size: 18px;
 	font-family: "century gothic", verdana, arial, sans-serif;
+	margin-block-end: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-/* Customization of paragraphs*/
+/* Customization of paragraph text */
 p {
-	text-align: left;
 	color: #000;
+	text-align: left;
 	font-weight: normal;
 	font-size: 16px;
 	font-family: "century gothic", verdana, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* TableOption Begin, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+/* Colours inspired by https://colorbrewer2.org/#type=sequential&scheme=Greens&n=9 */
 /* Customization of whole table */
 #futureparks {
 	font-family: "century gothic", verdana, arial, sans-serif;
-	width: 80%;
+	width: 70%;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 /* Customization of table content */
 #futureparks td {
 	border: 1px;
-	padding: 9px;
+	padding: 10px;
 	border-radius: 15px;
+	font-size: 16px;
+}
+/* Make the first column a certain colour and bold */
+#futureparks td:nth-child(1){
+	background-color: #c7e9c0;
+	font-weight: bold;
+}
+/* Make second and third column centered */
+#futureparks td:nth-child(2), td:nth-child(3){
+	text-align: center;
 }
 /* Make the even table rows a certain colour */
 #futureparks tr:nth-child(even){
@@ -157,24 +186,27 @@ p {
 /* Customization of table headings */
 #futureparks th {
 	padding: 12px;
-	text-align: left;
-	background-color: #016c59;
+	text-align: center;
+	background-color: #00441b;
 	color: white;
 	border-radius: 15px;
+	font-weight: bold;
+	font-size: 17px;
 }
 /* TableOption End, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
 
 
-/* Responsive Two Column Layout for Resume Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+/* Responsive Two Column Layout for About Page Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 /* Education Section */
 * {
 	box-sizing: border-box;
 }
-/* Create columns */
+/* Create two even columns */
 .columneducation {
 	float: left;
 	width: 50%; /* two columns */
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 /* Clear floats after the columns */
 .roweducation:after {
@@ -182,73 +214,76 @@ p {
 	display: table;
 	clear: both; 
 }
-/* ResponsiveOption Begin */
 /* Stack columns if page size is too small */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
 	.columneducation {
 		width: 100%;
 	}
 }
-/* ResponsiveOption End */
+/* Responsive Two Column Layout for About Page End */
 
-/* Responsive Three Column Layout for About Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+/* Responsive Three Column Layout for About Page Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 /* Skills and Certifications Section */
 * {
 	box-sizing: border-box;
 }
-/* Create columns */
+/* Create three even columns */
 .columnskills {
 	float: left;
 	width: 33.33%; /* three columns */
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-/* Clear floats after the columns */
+/* Clear floats after columns to allow page to continue flow of other content */
 .rowskills:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-/* ResponsiveOption Begin */
-/* Stack columns if page size is too small */
+/* Display skills/certifications in two columns if page gets small */
 @media screen and (max-width: 1500px) {
+	.columnskills {
+		width: 50%;
+	}
+}
+/* Display skills/certifications in one column if page gets even smaller */
+@media screen and (max-width: 700px) {
 	.columnskills {
 		width: 100%;
 	}
 }
-/* ResponsiveOption End */
+/* Responsive Three Column Layout for About Page End */
 
 
-/* Responsive Two Column Layout for Projects Page, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+/* Responsive Two Column Layout for Projects Page Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 /* Projects Section */
 * {
 	box-sizing: border-box;
 }
-/* Create columns */
+/* Create two even columns */
 .columnprojects {
 	float: left;
 	width: 50%; /* two columns */
-	padding: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-/* Clear floats after the columns */
+/* Clear floats after columns to allow page to continue flow of other content */
 .rowprojects:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
-
-/* ResponsiveOption Begin */
-/* Stack columns if page size is too small */
+/* Display projects in one column if page size is too small */
 @media screen and (max-width: 1500px) {
 	.columnprojects {
 		width: 100%;
 	}
 }
-/* ResponsiveOption End */
+/* Responsive Two Column Layout for Projects Page End */
 
 
-/* Center images on the website */
-.center {
+/* Center images, inspired by https://www.w3schools.com/howto/howto_css_image_center.asp */
+.centerimage {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -256,40 +291,40 @@ p {
 
 
 /* TableOption Begin, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+/* Colours inspired by https://colorbrewer2.org/#type=sequential&scheme=Blues&n=9 */
 /* Customization of whole table */
 #flemingcourses {
 	font-family: "century gothic", verdana, arial, sans-serif;
 	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 /* Customization of table content */
 #flemingcourses td {
 	border: 1px;
-	padding: 7px;
+	padding: 10px;
 	border-radius: 15px;
 	text-align: center;
+	font-size: 16px;
 }
 /* Make the odd table rows a certain colour */
 #flemingcourses tr:nth-child(odd){
-	background-color: #f0f5fc;
+	background-color: #deebf7;
 }
 /* Make the even table rows a certain colour */
 #flemingcourses tr:nth-child(even){
-	background-color: #e1ecfc;
+	background-color: #c6dbef;
 }
 /* Make the text in the even columns aligned left */
-#flemingcourses td:nth-child(even){
-	text-align: left;
-}
-/* Make the text in the even table headings aligned left */
-#flemingcourses th:nth-child(even){
+#flemingcourses td:nth-child(even), th:nth-child(even){
 	text-align: left;
 }
 /* Customization of table headings */
 #flemingcourses th {
-	padding: 12px;
-	background-color: #2E5894;
+	padding: 14px;
+	background-color: #08519c;
 	color: white;
 	border-radius: 15px;
-	text-align: center;
+	font-size: 17px;
 }
 /* TableOption End, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
