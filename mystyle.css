@@ -2,7 +2,11 @@
 body {
 	background-color: #f7fcfd;
 	font-family: helvetica, arial, sans-serif;
-	margin: 0px 0px 0px 180px;
+	margin: 0px;
+}
+
+.maincontent {
+	margin: 10px;
 }
 
 /* Border box for whole page */
@@ -10,57 +14,10 @@ body {
 	box-sizing: border-box;
 }
 
-/* MenuOption Begin, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
-/* Customization of side navigation bar 
-.leftmenu {
-	background-color: #ece2f0;
-	height: 100%;
-	width: 180px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding-top: 10px;
-}
-/* Customization of the text in the side navigation bar 
-.leftmenu a {
-	color: #014636;
-	font-weight: bold;
-	font-size: 25px;
-	font-family: helvetica, arial, sans-serif;
-	padding: 10px 6px 4px 16px;
-	text-decoration: none;
-	display: block;
-}
-/* Customization of the side navigation bar text when mouse hovers over them 
-.leftmenu a:hover {
-	color: #08519c;
-	font-weight: lighter;
-	font-size: 30px;
-}
-/* ResponsiveOption Begin, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive */
-/* When the screen size is too small, my photo and the side navigation bar links move to the top of the page. 
-@media screen and (max-width: 800px) {
-	.leftmenu {
-		width: 100%;
-		height: auto;
-		position: relative;
-	}
-	.leftmenu a {
-		float: left;
-	}
-	body {
-		margin-left: 0px; /* margin is removed from the body 
-	}
-}
-/* ResponsiveOption End, inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive */
-/* MenuOption End, inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
-
-
-
 /* Customization of the navigation bar */
 .navbar {
 	overflow: hidden;
-	background-color: var(--navbar-color);
+	background-color: #023858;
 	transition: .3s ease-in-out;
 }
 
@@ -77,13 +34,13 @@ body {
 
 /* Selects active class for current page */
 .active {
-	background-color: #637e77;
+	background-color: #74a9cf;
 	color: white;
 }
 
 /* Customization of the navigation bar links when mouse hovers over them */
 .navbar a:hover {
-	background-color: #7ea69c;
+	background-color: #a6bddb;
 	transition: 0.3s;
 }
 
@@ -164,7 +121,7 @@ body {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 12px;
-	background: #ebd8ea;
+	background: #deebf7;
 }
 /* Customization of site banner paragraph text */
 .sitebanner p {
@@ -178,7 +135,7 @@ body {
 }
 /* Customization of Header 1 */
 h1 {
-	color: #014636;
+	color: #023858;
 	text-align: center;
 	font-weight: bold;
 	font-size: 60px;
@@ -190,7 +147,7 @@ h1 {
 /* Customization of Header 2 */
 /* h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 h2 {
-	color: #4B6F44;
+	color: #045a8d;
 	text-align: left;
 	font-weight: bold;
 	font-size: 25px;
@@ -218,7 +175,7 @@ h3 {
 /* Customization of projects Header 3 text*/
 /* .projects h3, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 .projects h3 {
-	color: #2E5894;
+	color: #0570b0;
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
@@ -316,43 +273,3 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-/* TableOption Begin, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
-/* Colours inspired by https://colorbrewer2.org/#type=sequential&scheme=Blues&n=9 */
-/* Customization of whole table */
-#flemingcourses {
-	font-family: helvetica, arial, sans-serif;
-	width: auto;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-/* Customization of table content */
-#flemingcourses td {
-	border: 1px;
-	padding: 10px;
-	border-radius: 15px;
-	text-align: center;
-	font-size: 16px;
-}
-/* Make the odd table rows a certain colour */
-#flemingcourses tr:nth-child(odd){
-	background-color: #deebf7;
-}
-/* Make the even table rows a certain colour */
-#flemingcourses tr:nth-child(even){
-	background-color: #c6dbef;
-}
-/* Make the text in the even columns aligned left */
-#flemingcourses td:nth-child(even), th:nth-child(even){
-	text-align: left;
-}
-/* Customization of table headings */
-#flemingcourses th {
-	padding: 14px;
-	background-color: #08519c;
-	color: white;
-	border-radius: 15px;
-	font-size: 17px;
-}
-/* TableOption End, inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
