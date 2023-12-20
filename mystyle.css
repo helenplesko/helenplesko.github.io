@@ -1,6 +1,6 @@
 /* Background, font family, and margin of body of document */
 body {
-	background-color: #f7fcfd;
+	background-color: #DFE4EA;
 	font-family: helvetica, arial, sans-serif;
 	margin: 0px;
 }
@@ -17,7 +17,7 @@ body {
 /* Customization of the navigation bar */
 .navbar {
 	overflow: hidden;
-	background-color: #023858;
+	background-color: #022558;
 	transition: .3s ease-in-out;
 }
 
@@ -34,13 +34,13 @@ body {
 
 /* Selects active class for current page */
 .active {
-	background-color: #74a9cf;
+	background-color: #415C82;
 	color: white;
 }
 
 /* Customization of the navigation bar links when mouse hovers over them */
 .navbar a:hover {
-	background-color: #a6bddb;
+	background-color: #8192AC;
 	transition: 0.3s;
 }
 
@@ -112,16 +112,12 @@ body {
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
 
-
-
-
-
 /* Customization of site banner */
 .sitebanner {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 12px;
-	background: #deebf7;
+	background: #C0C8D5;
 }
 /* Customization of site banner paragraph text */
 .sitebanner p {
@@ -135,7 +131,7 @@ body {
 }
 /* Customization of Header 1 */
 h1 {
-	color: #023858;
+	color: #022558;
 	text-align: center;
 	font-weight: bold;
 	font-size: 60px;
@@ -147,7 +143,7 @@ h1 {
 /* Customization of Header 2 */
 /* h2, inspired by Shawn Morgan, https://fleming.desire2learn.com/d2l/home */
 h2 {
-	color: #045a8d;
+	color: #22406D;
 	text-align: left;
 	font-weight: bold;
 	font-size: 25px;
@@ -163,7 +159,7 @@ h2 {
 
 /* Customization of Header 3 */
 h3 {
-	color: #2E5894;
+	color: #415C82;
 	text-align: left;
 	font-weight: bold;
 	font-size: 20px;
